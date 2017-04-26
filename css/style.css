@@ -1,6 +1,50 @@
 body {
 	margin:auto;
 }
+.login_forma {
+	position:absolute;
+	z-index:555;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	flex-direction:column;
+	background:#fff;
+	width:100%;
+	height:900px;	
+}
+.login_forma_hide {
+	display:none;
+}
+#login {
+	text-align:center;
+}
+#login input {
+	display:block;
+	margin:auto;
+	border-radius:20px;
+	border:solid 1px #1f3663;
+	margin-bottom:2px;
+	width:200px;
+}
+#login input[type="submit"]{
+	background:#1f3663;
+	color:#fff;
+	outline:none;
+}
+#login_forma p {
+	text-align:center;
+	font-family:helvetica,arial,sans-serif;
+	font-size:0.9em;
+	color:#1f3663;
+}
+a {
+	color:#fff;
+	text-decoration:none;
+}
+a:hover {
+	color:#bbb;
+}
+
 #main {
 	margin:auto;
 	background:url('../images/background.jpg');
@@ -28,20 +72,22 @@ body {
 	display:inline-block;
 }
 #predmeti {
-	position:absolute;
-	top:25em;
-	left:1em;
+	position: absolute;
+	top: 25em;
+	left: 6px;
 }
 #predmeti select {
-	width:16em;
+	width:22em;
 	color:#1f3663;
 	border-radius:20px;
-	font-size:1.1em;
+	font-size:1em;
+
 }
+
 label[for="zimski_semestar"],
 label[for="letnji_semestar"] {
 	color:#fff;
-	font-size:1.5em;
+	font-size:1.2em;
 	display:block;
 	font-family:Helvetica, arial, sans-serif;
 }
@@ -50,16 +96,16 @@ label[for="letnji_semestar"] {
 }
 
 #podaci {
-	position:absolute;
-	top:19em;
-	right:0;
-	font-size:1.3em;
-	background:#1f3663;
+	position: absolute;
+	top: 396px;
+	right: 0;
+	font-size: 1.2em;
+	background: #1f3663;
 	border-collapse: collapse;
-	right:1em;
-	color:#fff;
-	font-family:Helvetica, arial, sans-serif;
-	border-radius:20px;
+	right: 9px;
+	color: #fff;
+	font-family: Helvetica, arial, sans-serif;
+	border-radius: 20px;
 }
 #podaci td {
 	padding:0.5em;
@@ -78,3 +124,19 @@ footer {
 	font-size:1.2em;
 	font-family:Helvetica, arial, sans-serif;
 }
+#favorite,#profesor,#profemail,#asistent,#asemail{
+	width:25em;
+	border-radius:20px;
+	text-align:center;
+	font-size:0.8em;
+	font-family:Helvetica, arial, sans-serif;
+}
+#nastava{
+	width:25em;
+	height:4em;
+	border-radius:20px;
+	font-size:0.8em;
+	font-family:Helvetica, arial, sans-serif;
+	
+	
+	}

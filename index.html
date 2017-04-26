@@ -8,85 +8,112 @@
 	<script src="js/script.js"></script>
 </head>
 <body>
+<div id="login_forma" class="login_forma">
+<form action="" method="get" id="login"><input type="text" name="User" id="User" placeholder="Korisničko ime">
+<input type="text" name="password" id="password" placeholder="Broj indeksa">
+<input type="submit" id="prijavise" value="Prijava"></form>
+<p id="poruka"></p>
+</div>
 	<div id="main">
+    
 		<h1>RASPORED NASTAVE</h1>
+        <form>
 		<section id="predmeti">
 			<label for="zimski_semestar">Zimski semestar</label><br />
 			<select id="zimski_semestar">
-				<optgroup label="I godina"></optgroup>
-				<option>Matematika za informatičare 1</option>
-				<option>...</option>
-				<option>...</option>
-				<option>...</option>
-				<optgroup label="II godina"></optgroup>
-				<option>...</option>
-				<option>...</option>
-				<option>...</option>
-				<option>...</option>
-				<optgroup label="III godina"></optgroup>
-				<option>...</option>
-				<option>...</option>
-				<option>...</option>
-				<option>...</option>
-				
-				<optgroup label="IV godina"></optgroup>
-				<option>...</option>
-				<option>...</option>
-				<option>...</option>
-				<option>...</option>
+				<optgroup label="I godina(Obavezni)"></optgroup>
+				<option>Osnove informacionih tehnologija</option>
+				<option>Matematika za Informaticare 1</option>
+				<option>Osnove programiranja</option>
+				<option>Engleski 1</option><option></option>
+				<optgroup label="II godina(Obavezni)"></optgroup>
+				<option>Kvantitativne metode</option>
+				<option>Arhitektura računara</option>
+				<option>Programiranje</option>
+				<option>Osnovi ekonomije</option><option></option>
+				<optgroup label="III godina(Obavezni)"></optgroup>
+				<option>Baze podataka</option>
+				<option>Projektovanje informacionih sistema</option>
+				<option>Objektno orjentisano programiranje 1</option><option></option>
+                <optgroup label="III godina(Izborni)"></optgroup>
+				<option>Poslovno pravo</option>
+				<option>Finansijska i aktuarska matematika</option>
+                <option>Analiza i logičko projektovanje</option>
+                <option>Teorija odlučivanja</option><option></option>
+                
+				<optgroup label="IV godina(Obavezni)"></optgroup>
+				<option>Objektno orjentisano programiranje 2</option>
+				<option>Softversko inženjerstvo</option>
+				<option>Računarska grafika</option><option></option>
+                <optgroup label="IV godina(Izborni)"></optgroup>
+                <option>Menadžment ljudskih resursa</option>
+				<option>Org.ponašanje i korporativna bezbednost</option>
+				<option>Bezbednost i zaštita IS</option>
+				<option>Softverski paterni</option>
 			</select>
 
 			<label for="letnji_semestar">Letnji semestar</label><br />
 			<select id="letnji_semestar">
-				<optgroup label="I godina"></optgroup>
-				<option>Matematika za informatičare 1</option>
-				<option>...</option>
-				<option>...</option>
-				<option>...</option>
-				<optgroup label="II godina"></optgroup>
-				<option>...</option>
-				<option>...</option>
-				<option>...</option>
-				<option>...</option>
-				<optgroup label="III godina"></optgroup>
-				<option>...</option>
-				<option>...</option>
-				<option>...</option>
-				<option>...</option>
-				<optgroup label="IV godina"></optgroup>
-				<option>...</option>
-				<option>...</option>
-				<option>...</option>
-				<option>...</option>
+				<optgroup label="I godina(Obavezni)"></optgroup>
+				<option>Teorija sistema</option>
+				<option>Engleski 2</option>
+				<option>Informacioni sistemi</option>
+				<option>Matematika za Informaticare 2</option><option></option>
+				<optgroup label="II godina(Obavezni)"></optgroup>
+				<option>Osnovi statistike</option>
+				<option>Operativni sistemi</option>
+				<option>Računarske mreže i komunikacije</option>
+				<option>Praktikum primenjenog programiranja 1</option><option></option>
+				
+                <optgroup label="III godina(Obavezni )"></optgroup>
+				<option>Elektronsko poslovanje</option>
+				<option>Multimedijalni sistemi</option>
+				<option>Web sistemi</option>
+				<option></option>
+                <optgroup label="III godina(Izborni) "></optgroup>
+				<option>Menadžment IS</option>
+				<option>Upravljanje projektima</option>
+				<option>Programiranje mobilnih komunikacija</option>
+				<option>Računovodstveni IS</option><option></option>
+				<optgroup label="IV godina(Obavezni)"></optgroup>
+				<option>Stručna praksa</option>
+				<option>Menadžment kvaliteta</option>
+				<option>Praktikum primenjenog programranja 2</option>
+                <optgroup label="IV godina(Izborni)"></optgroup>
+				<option>Virtuelno preduzeće</option>
+                <option>Inteligentni sistemi</option>
+                <option>Menadžment medija</option>
+                <option>Internet marketing</option>
 			</select>
 		</section>
 
 		<table id="podaci">
 			<tr>
 				<td>Predmet:</td>
-				<td></td>
+				<td><section id="favorite"></section></td>
 			</tr>
 			<tr>
 				<td>Profesor:</td>
-				<td></td>
+				<td><section id="profesor"></section></td>
 			</tr>
 			<tr>
 				<td>E-mail:</td>
-				<td></td>
+				<td><a id="mailto_prof"><section id="profemail"></section></a></td>
 			</tr>
 			<tr>
 				<td>Asistent:</td>
-				<td></td>
+				<td><section id="asistent"></section></td>
 			</tr>
 			<tr>
 				<td>E-mail:</td>
-				<td></td>
+				<td><a id="mailto_asis"><section id="asemail"></section></a></td>
 			</tr>
 			<tr>
 				<td>Nastava:</td>
-				<td></td>
+				<td><section id="nastava" ></section></td>
 			</tr>
 		</table>
+        </form>
 		<footer>&copy; 2017 Vladimir Pavlović</footer>
 	</div>
 </body>
